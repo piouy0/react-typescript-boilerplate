@@ -1,0 +1,10 @@
+{
+  "/": {
+    "filename": "html/index.html",
+    "template": "src/html/index.ejs",
+    "templateParameters": {
+      "title": "React + Typescript Boilerplate",
+      "description": ""
+    }
+  }
+}

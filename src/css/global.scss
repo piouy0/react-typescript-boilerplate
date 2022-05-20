@@ -1,0 +1,40 @@
+$primary: #5233d4;
+
+* {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5% !important;
+}
+
+body {
+  font-size: 1.4rem;
+  background: white;
+  -webkit-overflow-scrolling: touch;
+  // for Roboto font
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: auto;
+}
+
+a {
+  color: $primary;
+  &:hover {
+    color: $primary;
+    text-decoration: none;
+  }
+}
+
+input {
+  font-family: "Roboto", sans-serif !important;
+}
+
+button:focus,
+button:active:focus,
+button.active:focus,
+button.focus,
+button:active.focus,
+button.active.focus {
+  outline: none !important;
+}

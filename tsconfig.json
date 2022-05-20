@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "ES2019", // 컴파일 된 결과물이 어느 버전의 ECMAScript를 따를 것인지
+    "noImplicitAny": false, // any 타입으로 구현된 표현식 혹은 정의를 에러처리 할 것인가
+    "module": "esnext", // 프로그램에서 사용할 모듈 시스템. import/export 코드가 어떤 방식의 코드로 컴파일 될지 결정 ex) es2015 => require, esnext => import
+    "lib": ["ES2019", "dom"], // 컴파일 시 포함시켜야하는 javascript 내장 API들의 타입 정의에 대한 정보들
+    "jsx": "react", // jsx 코드를 어떻게 컴파일 할 것인가
+    "allowJs": true, // js file을 import 가능하게 할 것인가
+    "noEmit": true, // 컴파일러가 JavaScript 코드, source map, declaration의 outpit을 만들지 않을 것인가
+    "moduleResolution": "node", // 모듈 해석 전략. 웬만해선 node로 고정할 것
+    "isolatedModules": true, // 각 파일을 분리된 모듈로 트랜스파일링할 것인가, 설정할 경우 단일 파일 변환 프로세스에서 올바르게 해석할 수 없는 특정 코드를 작성할 경우 ts에서 경고 (const enum 및 네임스페이스와 같은 일부 TypeScript 기능에 런타임 문제가 발생을 위함)
+    "allowSyntheticDefaultImports": true, // 모듈에 기본 내보내기가 없는 경우 'y에서 x 가져오기'를 허용 ex) import * as React from "react" 가능
+    "downlevelIteration": true, // 사용되지 않는 지역 변수에 대해 에러를 발생시킬 것인가
+    "strict": true, // strict family 속성 전부 on 할 것인가
+    "resolveJsonModule": true, // .json 파일 가져오기 활성화
+    "experimentalDecorators": true, // 표준화 프로세스의 2단계에 있는 데코레이터에 대한 실험 지원을 활성화
+    "importHelpers": true, // 파일당 포함하는 대신 프로젝트당 한 번 tslib에서 도우미 함수 가져오기 허용
+    "skipLibCheck": true, // d.ts 와 선언파일의 type 검사를 피한다.
+    "declaration": true, // .d.ts' file 생성
+    "outDir": "./dist/", // 빌드된 결과물이 저장될 디렉토리를 지정
+    "baseUrl": ".", // 비상대적 import 모듈 해석시 기준이 되는 경로
+    "paths": {
+      // 컴파일러가 이해할 수 있게 절대경로 지정
+      "*": ["src/*"]
+    }
+  },
+  "include": ["src/**/*"], // vscode에서 "configure excludes" 에러를 막기위함
+  "exclude": ["node_modules"]
+}

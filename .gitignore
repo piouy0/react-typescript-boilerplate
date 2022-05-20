@@ -1,0 +1,23 @@
+# env
+*.env
+*.env.staging
+*.env.development
+*.env.production
+*.env.storybook
+
+# node.js
+node_modules/
+yarn-error.log
+
+# yarn
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.js
+
+# VSCode
+.vscode
+
+# package
+dist
