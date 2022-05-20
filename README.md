@@ -1,1 +1,1 @@
-### React + Typescript boilerplate repo입니다.
+### React + Typescript Boilerplate Repo입니다.
