@@ -1,1 +1,1 @@
-## React + Typescript 보일러 플레이트 저장소입니다.
+## React + Typescript Boilerplate repo입니다.
